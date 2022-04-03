@@ -8,9 +8,8 @@ const App = () => {
   const [displayData, setDisplayData] = useState({url:''})
 
   const handleApiCall = async (e) => {
-    const url = 'http://34.123.24.194:9999/'+e.target.name;
-    displayData.url=url
-    let options = {}
+    const url = 'http://13.126.41.226:9999/'+e.target.name;
+    displayData.url=url    let options = {}
       try {
           setLoading(true)
           const res = await fetch(url, options)
